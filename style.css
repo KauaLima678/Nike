@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body{
+    background-color: #ccee66;
+    color: #fff;
+    padding: 30px 100px;
+    /* 1°) Em cima e em baixo. 2°) Dos lados */
+    height: 100vh;
+
+    overflow: hidden;
+}
+
+body::before{
+    content: '';
+    background-color: #000000df;
+    width: 110%;
+    height: 120%;
+    position: absolute;
+    top: 0;
+    left: -600px;
+    transform: rotate(-70deg);
+}
+
+body::after {
+    content: 'Nike';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: rgba(20, 20, 20, 0.715);
+    font-size: 250px;
+    font-weight: bold;
+    transform: translate(-50%, -50%);
+    opacity: 0.5;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85%;
+    position: relative;
+    z-index: 2;
+
+    .box-text{
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.logo{
+    width: 80px;
+    position: relative;
+    z-index: 3;
+}
+
+.preco{
+    color: #8a8a8acc;
+    font-size: 24px;
+    transition: 0.5s ease
+}
+
+h1{
+    font-size: 80px;
+    margin-bottom: 40px;
+    width: 80%;
+}
+
+p{
+    font-size: 16px;
+    margin-bottom: 40px;
+    color: #ffffffa1;
+    max-width: 500px;
+}
+
+.btn{
+    background-color: #a3be52;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    color: #000;
+    cursor: pointer;
+    transition: 0.5s ease;
+
+    &:hover{
+        opacity: 0.7;
+    }
+}
+
+.tenis{
+    margin-right: -60px;
+    width: 700px;
+    transform: rotate(-25deg);
+    filter: drop-shadow(30px 45px 40px #161616 );
+    transition: 0.5s ease;
+}
+
+.trocaEfeito{
+    opacity: 0;
+    transform: rotate(-25deg) translateY(-30px);
+}
+
+.precoEfeito{
+    opacity: 0;
+}
+
+.boxBtn{
+    position: relative;
+    z-index: 3;
+    display: flex;
+    gap: 10px;
+}
+
+.botao{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: 3px solid #ffffff;
+}
+
+.botao:active{
+ opacity: 0.7;
+}
+
+.verde{
+    background-color: #ccee66;
+}
+
+.rosa{
+  background-color: #ff9eb5;
+}
+
+.azul{
+    background-color: #58cced;
+}

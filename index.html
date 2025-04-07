@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" type="image/svg+xml" href="./imgs/favicon.svg" />
+<link rel="shortcut icon" href="./imgs/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet"
+    />
+    <title>Nike</title>
+</head>
+<body>
+    <img src="./imgs/logo.png" alt="" class="logo" />
+    
+    <div class="container">
+        <div class="boxText">
+            <h4 class="preco">R$ 799,99</h4>
+            <h1>Nike Air Zoom</h1>
+            <p>
+                Uma passada elástica para qualquer corrida, a sensação familiar e
+                perfeita do Peg retorna para ajudá-lo a atingir seus objetivos. Esta
+                versão tem a mesma capacidade de resposta e suporte neutro que você
+                adora, mas com melhor conforto nas áreas sensíveis do seu pé, como o
+                arco e os dedos.
+            </p>
+            <a class="btn">Adicionar ao Carrinho</a>
+        </div>
+
+        <div class="caixa-imagem">
+            <img src="./imgs/nike1.png" alt="" class="tenis" />
+        </div>
+    </div>
+
+    <div class="boxBtn"> <!-- Mova a boxBtn para fora da container -->
+        <div onclick="mudarVisual('#ccee66', './imgs/nike1.png')" class="botao verde"></div>
+        <div onclick="mudarVisual('#58cced', './imgs/nike2.png')" class="botao azul"></div>
+        <div onclick="mudarVisual('#ff9eb5', './imgs/nike3.png')" class="botao rosa"></div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
